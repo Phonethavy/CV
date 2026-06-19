@@ -247,16 +247,108 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 760px) {
-    body { padding: 14px 0; }
+    body { padding: 0; background: #fff; }
+
     .page {
       width: 100%;
-      height: auto;
-      overflow: visible;
       grid-template-columns: 1fr;
+      box-shadow: none;
+      height: auto;
+      min-height: 0;
+      overflow: visible;
     }
-    .side { border-radius: 0; }
-    .main { padding: 20px 16px; }
-    .edu { flex-direction: column; gap: 10px; }
+
+    /* --- Sidebar --- */
+    .side {
+      padding: 18px 16px 16px;
+      text-align: center;
+      border-radius: 0;
+    }
+
+    .photo {
+      width: 80px; height: 80px;
+      margin: 0 auto 8px;
+    }
+
+    .id .name-lo { font-size: 22px; }
+    .id .name-en { font-size: 11px; letter-spacing: 2px; }
+    .id .role { font-size: 11.5px; }
+
+    .side-sec { padding: 14px 6px 0; }
+    .side-h {
+      font-size: 10px; letter-spacing: 2px;
+      justify-content: center;
+    }
+    .side-h::after { display: none; }
+
+    .contact-row {
+      justify-content: center;
+      font-size: 12px;
+      gap: 8px;
+    }
+
+    .skill { margin-bottom: 10px; }
+    .skill-name { font-size: 11.5px; }
+    .bar { height: 4px; }
+
+    .lang .l-name { font-size: 12px; }
+    .lang .l-tag { font-size: 10px; }
+    .dots i { width: 6px; height: 6px; }
+
+    .soft-tags { justify-content: center; }
+    .soft-tags span {
+      font-size: 10.5px;
+      padding: 3px 9px;
+    }
+
+    /* --- Main --- */
+    .main { padding: 20px 16px 14px; }
+
+    .sec { margin-bottom: 14px; }
+
+    .sec-h h2 { font-size: 13px; letter-spacing: 1px; }
+    .sec-h .num {
+      width: 22px; height: 22px;
+      font-size: 10px; border-radius: 5px;
+    }
+
+    .objective {
+      font-size: 12px;
+      padding: 10px 12px;
+    }
+
+    .timeline { padding-left: 18px; }
+    .timeline::before { left: 4px; }
+    .item { margin-bottom: 12px; }
+    .item::before {
+      left: -18px; top: 4px;
+      width: 10px; height: 10px;
+    }
+    .item .when { font-size: 10px; padding: 2px 6px; }
+    .item .title { font-size: 13.5px; }
+    .item .org { font-size: 11.5px; }
+    .item li { font-size: 12px; padding-left: 13px; }
+    .item li::before { top: 6px; width: 4px; height: 4px; }
+
+    .edu { flex-direction: column; gap: 10px; padding: 12px 14px; }
+    .edu .cap {
+      width: 34px; height: 34px;
+      border-radius: 7px;
+    }
+    .edu .deg { font-size: 13px; }
+    .edu .uni { font-size: 12px; }
+    .edu .yr { font-size: 10.5px; }
+
+    .foot {
+      font-size: 9px; letter-spacing: 0.5px;
+      margin-top: 10px; padding-top: 8px;
+    }
+  }
+
+  /* --- Tablet (761px – 1024px) --- */
+  @media (min-width: 761px) and (max-width: 1024px) {
+    body { padding: 16px 8px; }
+    .page { width: 100%; }
   }
 </style>
 </head>
@@ -360,10 +452,11 @@
       <div class="sec">
         <div class="sec-h"><span class="num">01</span><h2>Profile</h2></div>
         <p class="objective">
-          A professional Banking Customer Service / Teller with over <strong>3 years of experience</strong>
-          in counter operations and cash management. Graduated with a Bachelor's degree in Finance and
-          Banking from Vietnam. Possesses strong cross-border (Lao–Vietnamese) communication skills.
-          Eager to contribute to <strong>Vietcombank Lao</strong>.
+            Highly motivated and detail-oriented Banking Professional with over 3 years 
+         of experience in counter operations, cash management, and customer relations. 
+         Proven track record of delivering exceptional customer service and maintaining high operational standards. 
+         Eager to leverage technical expertise and a strong work ethic to contribute to operational excellence 
+         and mutual success within a progressive financial institution.
         </p>
       </div>
 

@@ -247,7 +247,15 @@
   /* ---------- Responsive ---------- */
   @media (max-width: 760px) {
     body { padding: 14px 0; }
-    .page { width: 100%; grid-template-columns: 1fr; }
+    .page {
+      width: 100%;
+      height: auto;
+      overflow: visible;
+      grid-template-columns: 1fr;
+    }
+    .side { border-radius: 0; }
+    .main { padding: 20px 16px; }
+    .edu { flex-direction: column; gap: 10px; }
   }
 </style>
 </head>
